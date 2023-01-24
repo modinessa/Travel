@@ -6,22 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&family=Magra:wght@400;700&family=Red+Hat+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Travel</title>
   </head>
   <body>
     <header>
-      <div class="logo">Travel Portal</div>
-      <nav class="app-menu">
-        <div class="app-nav-container"></div>
-        <li class="app-menu-item">how it works</li>
-        <li class="app-menu-item">plan your trip</li>
-        <li class="app-menu-item">destinations</li>
-        <li class="app-menu-item">travel stories</li>
+      <a href="/" class="logo">
+        <img src="./assets/images/logo.svg" alt="travel logo" />
+        Travel Portal
+      </a>
+      <nav class="app-nav-menu">
+        <div class="app-nav-container">
+          <a class="app-nav-item" href="/">how it works</a>
+          <a class="app-nav-item" href="#plan">plan your trip</a>
+          <a class="app-nav-item" href="#destinations">destinations</a>
+          <a class="app-nav-item" href="#stories">travel stories</a>
         </div>
+        <button class="app-btn app-login-btn">login</button>
       </nav>
+      <div class="app-hero">
+        <div class="hero-content">
+          <h1>Explore the beauty of the World</h1>
+          <p>
+            Receive personalized recommendations for countries, hotels,
+            activities and more
+          </p>
+        </div>
 
-
+        <form action="app-search">
+          <input type="text" placeholder="What would you like to do?" />
+          <button type="submit" class="app-btn app-search-btn">
+            start planning
+          </button>
+        </form>
       </div>
     </header>
+    <section id="plan" class="app-section 3-steps">
+      <h2>3 STEPS TO THE PERFECT TRIP</h2>
+      <div class="3-steps-container">
+        <div class="single-step">
+          <img src="./assets/images/bike.svg" alt="bycicle" />
+          <p>Tell us what you want to do</p>
+        </div>
+        <div class="single-step">
+          <img src="./assets/images/calendar.svg" alt="calendar" />
+          <p>Share us preferable dates</p>
+        </div>
+        <div class="single-step">
+          <img src="./assets/images/plane.svg" alt="plane" />
+          <p>We will give you recommendations</p>
+        </div>
+      </div>
+    </section>
+    <section id="destinations" class="app-section destinations">
+      <h2>POPULAR DESTINATIONS</h2>
+      <div class="destinations-karusel">
+        <div class="karusel-img-container">
+          <div class="karusel-block">
+            <img src="./assets/images/Rectangle 23.png" alt="somewhere" />
+            <h3>SOMEWHERE</h3>
+          </div>
+          <div class="karusel-block">
+            <img src="./assets/images/Rectangle 24.png" alt="japan" />
+            <h3>JAPAN</h3>
+          </div>
+          <div class="karusel-block">
+            <img src="./assets/images/Rectangle 25.png" alt="usa" />
+            <h3>USA</h3>
+          </div>
+        </div>
+        <div class="karusel-controller">
+          <div class="karusel-btn"></div>
+          <div class="karusel-btn"></div>
+          <div class="karusel-btn"></div>
+        </div>
+      </div>
+      <button class="app-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 35px; height: 22.5px"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+          />
+        </svg>
+        find more
+      </button>
+    </section>
+    <section id="stories" class="app-section travel-stories">
+      <h2>TRAVEL STORIES</h2>
+      <div class="stories-container">
+        <div class="story-container">
+          <img src="./assets/images/Rectangle 29.png" alt="thailand boat" />
+          <div class="story-content">
+            <h4>10 Photos of Attractive Thailand</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <a href="/">Read More</a>
+          </div>
+          <button class="app-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 35px; height: 22.5px"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+              />
+            </svg>
+            see more
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
