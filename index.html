@@ -16,11 +16,11 @@
   </head>
   <body>
     <header>
-      <a href="/" class="logo">
-        <img src="./assets/images/logo.svg" alt="travel logo" />
-        Travel Portal
-      </a>
       <nav class="app-nav-menu">
+        <a href="/" class="logo">
+          <img src="./assets/images/logo.svg" alt="travel logo" />
+          Travel Portal
+        </a>
         <div class="app-nav-container">
           <a class="app-nav-item" href="/">how it works</a>
           <a class="app-nav-item" href="#plan">plan your trip</a>
@@ -31,24 +31,23 @@
       </nav>
       <div class="app-hero">
         <div class="hero-content">
-          <h1>Explore the beauty of the World</h1>
+          <h1>Explore the beauty of<br />the World</h1>
           <p>
             Receive personalized recommendations for countries, hotels,
             activities and more
           </p>
+          <form action="submit" class="app-search">
+            <input type="text" placeholder="What would you like to do?" />
+            <button type="submit" class="app-btn app-search-btn">
+              start planning
+            </button>
+          </form>
         </div>
-
-        <form action="app-search">
-          <input type="text" placeholder="What would you like to do?" />
-          <button type="submit" class="app-btn app-search-btn">
-            start planning
-          </button>
-        </form>
       </div>
     </header>
     <section id="plan" class="app-section 3-steps">
       <h2>3 STEPS TO THE PERFECT TRIP</h2>
-      <div class="3-steps-container">
+      <div class="steps-container">
         <div class="single-step">
           <img src="./assets/images/bike.svg" alt="bycicle" />
           <p>Tell us what you want to do</p>
@@ -65,37 +64,43 @@
     </section>
     <section id="destinations" class="app-section destinations">
       <h2>POPULAR DESTINATIONS</h2>
-      <div class="destinations-karusel">
-        <div class="karusel-img-container">
-          <div class="karusel-block">
+      <div class="destinations-slideshow">
+        <div class="slideshow-block-container">
+          <div class="slideshow-block">
             <img src="./assets/images/Rectangle 23.png" alt="somewhere" />
             <h3>SOMEWHERE</h3>
           </div>
-          <div class="karusel-block">
+          <div class="slideshow-block">
             <img src="./assets/images/Rectangle 24.png" alt="japan" />
             <h3>JAPAN</h3>
           </div>
-          <div class="karusel-block">
+          <div class="slideshow-block">
             <img src="./assets/images/Rectangle 25.png" alt="usa" />
             <h3>USA</h3>
           </div>
         </div>
-        <div class="karusel-controller">
-          <div class="karusel-btn"></div>
-          <div class="karusel-btn"></div>
-          <div class="karusel-btn"></div>
-        </div>
+      </div>
+      <div class="slideshow-controller">
+        <span class="slideshow-btn"></span>
+        <span class="slideshow-btn active"></span>
+        <span class="slideshow-btn"></span>
       </div>
       <button class="app-btn">
         <svg
+          class="arrow"
+          width="24"
+          height="20"
           xmlns="http://www.w3.org/2000/svg"
-          style="width: 35px; height: 22.5px"
-          viewBox="0 0 448 512"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
         >
           <path
-            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+            stroke="#ffffff"
+            stroke-width="2"
           />
         </svg>
+        <!-- <span class="arrow">&#8594;</span> -->
         find more
       </button>
     </section>
@@ -120,12 +125,17 @@
           </div>
           <button class="app-btn">
             <svg
+              class="arrow"
+              width="24"
+              height="20"
               xmlns="http://www.w3.org/2000/svg"
-              style="width: 35px; height: 22.5px"
-              viewBox="0 0 448 512"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
             >
               <path
-                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+                stroke="#ffffff"
+                stroke-width="2"
               />
             </svg>
             see more
