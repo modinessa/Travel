@@ -87,7 +87,7 @@ button:hover {
 }
 
 header {
-  background-image: url(../images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png);
+  background-image: url(../images/hero-section-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 765px;
@@ -255,7 +255,7 @@ form {
   height: 1331px;
   padding: 40px 120px;
   max-width: 100%;
-  background: url(../images/Rectangle\ 33.png) no-repeat center;
+  background: url(../images/stories-section-bg.png) no-repeat center;
   box-shadow: inset 0px 1270px 0px 0px rgba(255, 255, 255, 0.7);
   background-size: contain;
 }
