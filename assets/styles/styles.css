@@ -1,7 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  width: 1440px;
+  height: 100%;
+  max-width: 1440px;
   overflow-x: hidden;
   margin: 0 auto;
+  background-color: #e5e5e5;
 }
 
 body::-webkit-scrollbar {
@@ -63,6 +69,10 @@ input {
 
 img {
   border-radius: 16px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 button {
@@ -252,12 +262,12 @@ form {
 
 .stories-container {
   box-sizing: border-box;
-  height: 1331px;
+  min-height: 1331px;
   padding: 40px 120px;
   max-width: 100%;
   background: url(../images/stories-section-bg.png) no-repeat center;
   box-shadow: inset 0px 1270px 0px 0px rgba(255, 255, 255, 0.7);
-  background-size: contain;
+  background-size: cover;
 }
 
 .story-container img {
@@ -275,13 +285,21 @@ form {
   text-align: left;
 }
 
-.story-content p {
-  display: block;
-  margin-bottom: 0;
-  height: 150px;
+.story-content div {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+
+  /* letter-spacing: 0.025em; */
+  color: #0d606f;
+  margin-top: 24px;
+  margin-bottom: 5px;
+  max-height: 145px;
+
+  overflow: hidden;
   text-overflow: ellipsis;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .stories-container a {
@@ -317,6 +335,11 @@ footer {
 
 footer a {
   color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-links svg {
